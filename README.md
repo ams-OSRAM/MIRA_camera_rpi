@@ -11,29 +11,31 @@ Welcome to the **Mira** project, an open-source camera board designed for Raspbe
 
  Mira is a family of Near IR enhanced global shutter image sensors ranging between 0.16MP and 2.2MP. 
  The sensor has a small 2.79 µm pixel size with high sensitivity made possible by a state of the art BSI technology. The sensor has a MIPI CSI-2 interface to allow easy interfacing with a plethora of processors and FPGAs. Due to its small size, configurability and high sensitivity both in visual as well as NIR, the Mira is well suited for 2D and 3D applications, which include Active Stereo Vision, Structured Light Vision and AR/VR. High sensitivity in NIR enables increased measurement range and allows overall system power consumption optimization which is key for battery powered consumer and industrial applications.
-  
-## Software and drivers
-* [Linux kernel with mira220 driver](https://github.com/fiepfiep/linux/tree/rpi-6.12.y) 
-* [Libcamera](https://github.com/fiepfiep/libcamera)
 
 ## Features
-* Mira sensor
-* **Open-source hardware and software**
+* Mira image sensor 
+* On-chip oscillator, LDO, sequencero
+* Accessible GPIO for trigger or illumination sync
+* Open-source hardware and software*
 * Compatible with any Raspberry Pi
-* For sale via distributors
+* Also for sale via distributors
 
 ## Notes
 * Altium files available on request
+
+## Schematics
+* [mira220 schematics](/Mira220/Output/PDF/Schematic%20Prints.PDF)
+* [mira050 schematics](/Mira050/Output/PDF/Schematic%20Print/Schematic%20Prints.PDF)
+* [mira016 schematics](/Mira016/Output/PDF/Schematic%20Print/MIRA016%20CSP%20Reference%20Design.PDF)
+
+## Software and drivers
+* [Linux kernel with mira220 driver](https://github.com/fiepfiep/linux/tree/rpi-6.12.y) 
+* [Libcamera](https://github.com/fiepfiep/libcamera)
 
 ## Links
 * [mira050 ams](https://ams-osram.com/products/sensor-solutions/cmos-image-sensors/ams-mira050-cmos-image-sensor)
 * [mira016 ams](https://ams-osram.com/products/sensor-solutions/cmos-image-sensors/ams-mira016-cmos-image-sensor)
 * [mira220 ams](https://ams-osram.com/products/sensor-solutions/cmos-image-sensors/ams-mira220)
-
-# Schematics
-* [mira220 schematics](/Mira220/Output/PDF/Schematic%20Prints.PDF)
-* [mira050 schematics](/Mira050/Output/PDF/Schematic%20Print/Schematic%20Prints.PDF)
-* [mira016 schematics](/Mira016/Output/PDF/Schematic%20Print/MIRA016%20CSP%20Reference%20Design.PDF)
 
 ## Support
 For questions, issues, or suggestions, please open an issue in the issue tracker.
