@@ -1,7 +1,9 @@
 # Mira Camera Boards for Raspberry Pi
-<img src="https://look.ams-osram.com/transform/2e384aa6-f0bb-469e-bb11-84fa3b1feff5/Mira050-IM001268-1-00" width="100"  />
-<img src="https://look.ams-osram.com/transform/d6a33393-efd2-48f5-9375-f44636e4a3fe/Mira016-IM001269-1-00" width="100"  />
-<img src="https://look.ams-osram.com/transform/500ef14d-31c2-4142-881d-7061b992c443/Mira220-IM001270-1-00" width="100"  />
+
+
+Mira050           |  Mira220         |  Mira016
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://look.ams-osram.com/transform/2e384aa6-f0bb-469e-bb11-84fa3b1feff5/Mira050-IM001268-1-00" width="200"  /> |  <img src="https://look.ams-osram.com/transform/500ef14d-31c2-4142-881d-7061b992c443/Mira220-IM001270-1-00" width="200"  /> | <img src="https://look.ams-osram.com/transform/d6a33393-efd2-48f5-9375-f44636e4a3fe/Mira016-IM001269-1-00" width="200"  />
 
 
 ## Introduction
