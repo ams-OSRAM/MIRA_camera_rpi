@@ -31,13 +31,11 @@ Welcome to the **Mira** project, an open-source camera board designed for Raspbe
 * [mira220 ams](https://ams-osram.com/products/sensor-solutions/cmos-image-sensors/ams-mira220)
 
 # Schematics
-* [mira220 schematics](Mira220\Output\PDF\Schematic%20Prints.PDF)
-* [mira050 schematics](Mira050\Output\PDF\Schematic%20Prints.PDF)
-* [mira016 schematics](Mira016\Output\PDF\Schematic%20Prints.PDF)
+* [mira220 schematics](/Mira220/Output/PDF/Schematic%20Prints.PDF)
+* [mira050 schematics](/Mira050/Output/PDF/Schematic%20Prints.PDF)
+* [mira016 schematics](/Mira016/Output/PDF/Schematic%20Prints.PDF)
 
 
 ## Support
 For questions, issues, or suggestions, please open an issue in the issue tracker.
 
-## Schematic
-![alt]https://look.ams-osram.com/transform/2e384aa6-f0bb-469e-bb11-84fa3b1feff5/Mira050-IM001268-1-00.jpg "title")
