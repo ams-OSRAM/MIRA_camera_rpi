@@ -37,6 +37,12 @@ Welcome to the **Mira** project, an open-source camera board designed for Raspbe
 * [mira016 ams](https://ams-osram.com/products/sensor-solutions/cmos-image-sensors/ams-mira016-cmos-image-sensor)
 * [mira220 ams](https://ams-osram.com/products/sensor-solutions/cmos-image-sensors/ams-mira220)
 
+## Accessories
+* [m12 lens](https://www.lensation.de/product/B3M4016/)
+* [lens holder](https://www.lensation.de/product/sh02m13v3/)
+* [screws: DIN 7981 - Form CH - Edelstahl Rostfrei A2 - 2,2 mm](https://online-schrauben.de/shop/Schrauben/Blechschrauben/DIN-7981-Form-CH-Linsenkopf-Blechschrauben-mit-Phillips-Kreuzschlitz-und-Spitze-aehnl.-ISO-7049/Edelstahl-Rostfrei-A2/2,2-mm-Schraubendurchmesser)
+* [Camera Cable for Raspberry Pi](https://www.mouser.at/ProductDetail/Adafruit/1648?qs=GURawfaeGuAYPzNMiqAbyQ%3D%3D)
+
 ## Support
 For questions, issues, or suggestions, please open an issue in the issue tracker.
 
