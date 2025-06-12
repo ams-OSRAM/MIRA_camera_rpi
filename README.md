@@ -1,5 +1,10 @@
-# Mira Camera Boards for Raspberry Pi
+# Mira Image Sensors: Landing page
+### [main page](/README.md)
 
+
+### [camera board](/camera_board/README.md)
+
+### [software and drivers](/software/README.md)
 
 Mira050           |  Mira220         |  Mira016
 :-------------------------:|:-------------------------:|:-------------------------:
@@ -7,10 +12,11 @@ Mira050           |  Mira220         |  Mira016
 
 
 ## Introduction
-Welcome to the **Mira** project, an open-source camera board designed for Raspberry Pi boards using the Mira image sensor family. This project aims to provide a high-quality, affordable, and accessible global shutter camera module for advanced Raspberry Pi projects. The boards are designed using Altium.
+Welcome to the **Mira** project, an open-source camera board designed for Raspberry Pi or similar compute boards using the Mira image sensor family. This project aims to provide a high-quality, affordable, and accessible global shutter camera module. The boards are designed using Altium.
 
  Mira is a family of Near IR enhanced global shutter image sensors ranging between 0.16MP and 2.2MP. 
  The sensor has a small 2.79 µm pixel size with high sensitivity made possible by a state of the art BSI technology. The sensor has a MIPI CSI-2 interface to allow easy interfacing with a plethora of processors and FPGAs. Due to its small size, configurability and high sensitivity both in visual as well as NIR, the Mira is well suited for 2D and 3D applications, which include Active Stereo Vision, Structured Light Vision and AR/VR. High sensitivity in NIR enables increased measurement range and allows overall system power consumption optimization which is key for battery powered consumer and industrial applications.
+
 
 ## Features
 * Mira image sensor 
@@ -23,14 +29,6 @@ Welcome to the **Mira** project, an open-source camera board designed for Raspbe
 ## Notes
 * Altium files available on request
 
-## Schematics
-* [mira220 schematics](/Mira220/Output/PDF/Schematic%20Prints.PDF)
-* [mira050 schematics](/Mira050/Output/PDF/Schematic%20Print/Schematic%20Prints.PDF)
-* [mira016 schematics](/Mira016/Output/PDF/Schematic%20Print/MIRA016%20CSP%20Reference%20Design.PDF)
-
-## Software and drivers
-* [Linux kernel with mira220 driver](https://github.com/fiepfiep/linux/tree/rpi-6.12.y) 
-* [Libcamera](https://github.com/fiepfiep/libcamera)
 
 ## Links
 * [mira050 ams](https://ams-osram.com/products/sensor-solutions/cmos-image-sensors/ams-mira050-cmos-image-sensor)
