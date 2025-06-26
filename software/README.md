@@ -70,6 +70,10 @@ sudo cp arch/arm64/boot/dts/overlays/*.dtb* /boot/firmware/overlays/
 sudo cp arch/arm64/boot/dts/overlays/README /boot/firmware/overlays/
 ```
 
+Then, in the file `/boot/firmware/config.txt` - add this line at the bottom:
+```
+kernel=kernel8.img
+```
 ```
 sudo reboot
 ```
