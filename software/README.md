@@ -29,7 +29,7 @@ OS customization is possible during flashing (users, wifi, ssh access ..)
 
 Insert the SD card and boot the system.
 
-### Step 2: Compile your kernel
+### Step 2: Compile your kernel (no longer needed when using the latest image from raspberry pi)
 According to [this](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#download-kernel-source
 ) guide. 
 
@@ -78,7 +78,7 @@ kernel=kernel8.img
 sudo reboot
 ```
 
-### Step 3: install libcamera
+### Step 3: install libcamera (still required)
 
 Libcamera is the ISP framework, and cooperates with the driver.
 Follow [this](https://www.raspberrypi.com/documentation/computers/camera_software.html#building-libcamera) guide.
