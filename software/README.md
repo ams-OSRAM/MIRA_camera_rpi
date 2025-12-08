@@ -98,6 +98,7 @@ sudo apt install -y libglib2.0-dev libgstreamer-plugins-base1.0-dev
 ```
 
 ```
+cd ~
 git clone https://github.com/ams-OSRAM/libcamera.git
 ```
 
@@ -123,6 +124,7 @@ sudo apt install -y cmake libboost-program-options-dev libdrm-dev libexif-dev
 sudo apt install -y meson ninja-build
 ```
 ```
+cd ~
 git clone https://github.com/raspberrypi/rpicam-apps.git
 ```
 
@@ -133,7 +135,7 @@ cd rpicam-apps
 ```
 For desktop-based operating systems like Raspberry Pi OS, configure the rpicam-apps build with the following meson command:
 ```
-meson setup build -Denable_libav=enabled -Denable_drm=enabled -Denable_egl=enabled -Denable_qt=enabled -Denable_opencv=disabled -Denable_tflite=disabled -Denable_hailo=disabled
+meson setup build -Denable_libav=disabled -Denable_drm=enabled -Denable_egl=enabled -Denable_qt=enabled -Denable_opencv=disabled -Denable_tflite=disabled -Denable_hailo=disabled
 ```
 
 ```
