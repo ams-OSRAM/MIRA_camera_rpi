@@ -85,8 +85,8 @@ Follow [this](https://www.raspberrypi.com/documentation/computers/camera_softwar
 
 ```
 sudo apt remove --purge rpicam-apps
-sudo apt install -y libcamera-dev libepoxy-dev libjpeg-dev libtiff5-dev libpng-dev
-sudo apt install libavcodec-dev libavdevice-dev libavformat-dev libswresample-dev
+sudo apt remove libcamera-apps
+sudo apt remove libcamera-dev
 
 sudo apt install -y libboost-dev
 sudo apt install -y libgnutls28-dev openssl libtiff5-dev pybind11-dev
@@ -153,5 +153,21 @@ Try it out!
 rpicam-hello
 ```
 
+### optional: Python bindings
+To install python bindings, you will need picamera2.
 
+create a virtual env:
+```
+cd ~
+python -m venv .venv --system-site-packages
+source .venv/bin/activate
+git clone https://github.com/raspberrypi/picamera2
+pip install ./picamera2
+```
 
+after this, you might need to link the libcamera.so files to within a python path.
+make sure to match python version with the version on your system. In this case its 3.13.
+
+```
+sudo ln -sf /usr/local/lib/aarch64-linux-gnu/python3.13/site-packages/libcamera	 /usr/local/lib/python3.13/dist-packages/libcamera
+```
