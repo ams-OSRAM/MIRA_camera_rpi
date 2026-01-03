@@ -4,21 +4,13 @@
 There's a few options out there to get a Mira camera board working with your Raspberry Pi.
 
 
-## Option 1: Pre-built image with Mira drivers
-
-Get a pre-built image from the [ams website](https://ams-osram.com/products/boards-kits-accessories/kits/ams-mira-evm-sn-raspberry-evaluation-kit
-)
-
-This is pre-built image is bullseye OS (not for pi5) and works with all Mira image sensors. (220,050,016)
-Simply download and flash to SD with Raspberry Pi Imager.
-
-## Option 2: Customize your own image.
-For Mira220, I've upstreamed a driver to the raspberr pi kernel github repo.
+For Mira220, I've upstreamed a driver to the raspberry pi kernel github repo.
+For Mira016 you need to use the ams repository.
 Libcamera changes reside in a fork
-Other Mira sensor drivers are not yet public, but available on request.
 
 * [Linux kernel with mira220 driver](https://github.com/raspberrypi/linux/tree/rpi-6.12.y) 
 * [Libcamera with mira220 support](https://github.com/ams-OSRAM/libcamera)
+* [Linux kernel with mira016 driver](https://github.com/ams-OSRAM/linux_mira_ams)
 
 ### Step 1: Prepare an SD card
 
@@ -29,14 +21,14 @@ OS customization is possible during flashing (users, wifi, ssh access ..)
 
 Insert the SD card and boot the system.
 
-### Step 2: Compile your kernel (no longer needed when using the latest image from raspberry pi)
+### Step 2: Compile your kernel (no longer needed for mira220 when using the latest image from raspberry pi)
 According to [this](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#download-kernel-source
 ) guide. 
 
 Use this branch: 
 
 ```
-git clone --depth=1 --branch rpi-6.12.y https://github.com/raspberrypi/linux
+git clone --depth=1 --branch rpi-6.12.y https://github.com/ams-OSRAM/linux_mira_ams
 ```
 
 The below guide explains how to [build the image on the pi itself](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#natively-build-a-kernel), but you can also [cross-compile](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#cross-compile-the-kernel) on another system (advanced users)
