@@ -114,6 +114,7 @@ These are some little helper applications to show a video stream.
 ```
 sudo apt install -y cmake libboost-program-options-dev libdrm-dev libexif-dev
 sudo apt install -y meson ninja-build
+sudo apt install -y libpng-dev libepoxy-dev
 ```
 ```
 cd ~
