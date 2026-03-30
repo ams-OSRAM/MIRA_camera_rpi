@@ -3,15 +3,6 @@
 
 There's a few options out there to get a Mira camera board working with your Raspberry Pi.
 
-
-For Mira220, I've upstreamed a driver to the raspberry pi kernel github repo.
-For Mira016 you need to use the ams repository.
-Libcamera changes reside in a fork
-
-* [Linux kernel with mira220 driver](https://github.com/raspberrypi/linux/tree/rpi-6.12.y) 
-* [Libcamera with mira220 support](https://github.com/ams-OSRAM/libcamera)
-* [Linux kernel with mira016 driver](https://github.com/ams-OSRAM/linux_mira_ams)
-
 ### Step 1: Prepare an SD card
 
 Start from a fresh [Raspberry Pi 64bit image]([https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit](https://www.raspberrypi.com/software/operating-systems/)).
