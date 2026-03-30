@@ -1,10 +1,8 @@
 # Mira Image Sensors: Landing page
-### [main page](/README.md)
+## Quick Links
+- [camera board PCB](/camera_board/README.md)
 
-
-### [camera board](/camera_board/README.md)
-
-### [software and drivers](/software/README.md)
+- [software and drivers](/software/README.md)
 
 Mira050           |  Mira220         |  Mira016
 :-------------------------:|:-------------------------:|:-------------------------:
