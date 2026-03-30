@@ -17,60 +17,18 @@ Libcamera changes reside in a fork
 Start from a fresh [Raspberry Pi 64bit image]([https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit](https://www.raspberrypi.com/software/operating-systems/)).
 Or, use Raspberry Pi imager to prepare an SD card for you. [recommended] [rpi imager](https://www.raspberrypi.com/software/)
 
-OS customization is possible during flashing (users, wifi, ssh access ..)
+OS customization is possible during flashing (users, wifi, ssh access, usb gadget mode ..)
 
 Insert the SD card and boot the system.
 
-### Step 2: Compile your kernel (no longer needed for mira220 when using the latest image from raspberry pi)
-According to [this](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#download-kernel-source
-) guide. 
+### Step 2: Compile your kernel module and device tree (no longer needed for mira220 when using the latest image from raspberry pi)
 
-Use this branch: 
+- According to [mira220](github.com/ams-OSRAM/mira220_v4l2_driver) guide. 
+- According to [mira016](https://github.com/ams-OSRAM/mira016_v4l2_driver) guide. 
 
-```
-git clone --depth=1 --branch rpi-6.12.y https://github.com/ams-OSRAM/linux_mira_ams
-```
+others sensors coming soon.
 
-The below guide explains how to [build the image on the pi itself](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#natively-build-a-kernel), but you can also [cross-compile](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#cross-compile-the-kernel) on another system (advanced users)
-
-Prepare the build dependencies:
-
-```
-sudo apt install bc bison flex libssl-dev make
-```
-
-cd into the folder you just cloned and prepare the build configuration:
-
-```
-cd linux
-KERNEL=kernel8
-make bcm2711_defconfig
-```
-```
-make -j6 Image.gz modules dtbs
-```
-
-```
-sudo make -j6 modules_install
-```
-
-```
-sudo cp /boot/firmware/$KERNEL.img /boot/firmware/$KERNEL-backup.img
-sudo cp arch/arm64/boot/Image.gz /boot/firmware/$KERNEL.img
-sudo cp arch/arm64/boot/dts/broadcom/*.dtb /boot/firmware/
-sudo cp arch/arm64/boot/dts/overlays/*.dtb* /boot/firmware/overlays/
-sudo cp arch/arm64/boot/dts/overlays/README /boot/firmware/overlays/
-```
-
-Then, in the file `/boot/firmware/config.txt` - add this line at the bottom:
-```
-kernel=kernel8.img
-```
-```
-sudo reboot
-```
-
-### Step 3: install libcamera (still required)
+### Step 3: build libcamera (still required to include mira)
 
 Libcamera is the ISP framework, and cooperates with the driver.
 Follow [this](https://www.raspberrypi.com/documentation/computers/camera_software.html#building-libcamera) guide.
