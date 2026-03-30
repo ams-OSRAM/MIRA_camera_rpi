@@ -1,6 +1,7 @@
 # Mira Image Sensors: Camera boards
 [main page](/README.md)
 
+ams offers a reference design for its Mira image sensors. The design is open source, so you can manufacture your own boards, or you can purchase a board from a distributor (Digikey,Mouser,Farnel,Rutronic...)
 
 Mira050           |  Mira220         |  Mira016
 :-------------------------:|:-------------------------:|:-------------------------:
