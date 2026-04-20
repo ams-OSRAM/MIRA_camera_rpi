@@ -42,14 +42,12 @@ To operate a Mira camera board with your Raspberry Pi, you'll need:
 
 ### Step 2: Install the Kernel Module and Device Tree
 
-> **Note**: This step is **no longer required for Mira220** when using the latest Raspberry Pi OS image.
-
 Choose your sensor model:
 
 - **Mira220**: [Linux Driver & Installation Guide](https://github.com/ams-OSRAM/mira220_v4l2_driver)
+- **Mira050**: [Linux Driver & Installation Guide](https://github.com/ams-OSRAM/mira050_v4l2_driver)
 - **Mira016**: [Linux Driver & Installation Guide](https://github.com/ams-OSRAM/mira016_v4l2_driver)
 
-*Additional sensor drivers coming soon.*
 
 ---
 
