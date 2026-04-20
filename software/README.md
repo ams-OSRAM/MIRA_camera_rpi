@@ -55,7 +55,7 @@ Choose your sensor model:
 
 Libcamera is the ISP framework that works alongside the V4L2 driver to process camera data.
 
-#### 3.1 Install Dependencies
+#### Install Libcam Dependencies
 
 ```bash
 # Remove existing camera packages
@@ -68,7 +68,7 @@ sudo apt install -y meson cmake python3-yaml python3-ply
 sudo apt install -y libglib2.0-dev libgstreamer-plugins-base1.0-dev
 ```
 
-#### 3.2 Clone and Build Libcamera
+#### Clone and Build Libcamera
 
 ```bash
 # Clone the Mira-enabled libcamera fork
@@ -96,42 +96,8 @@ sudo ninja -C build install
 
 ---
 
-### Step 4: Install rpicam-apps
 
-These utilities provide easy access to camera streams for testing and development.
-
-#### 4.1 Install Dependencies
-
-```bash
-sudo apt install -y cmake libboost-program-options-dev libdrm-dev libexif-dev
-sudo apt install -y meson ninja-build libpng-dev libepoxy-dev
-```
-
-#### 4.2 Build and Install
-
-```bash
-# Clone the repository
-cd ~
-git clone https://github.com/raspberrypi/rpicam-apps.git
-cd rpicam-apps
-
-# Configure for desktop OS (Raspberry Pi OS)
-meson setup build \
-  -Denable_libav=disabled \
-  -Denable_drm=enabled \
-  -Denable_egl=enabled \
-  -Denable_qt=enabled \
-  -Denable_opencv=disabled \
-  -Denable_tflite=disabled \
-  -Denable_hailo=disabled
-
-# Compile and install
-meson compile -C build
-sudo meson install -C build
-sudo ldconfig
-```
-
-#### 4.3 Test Your Setup
+#### Test Your Setup
 
 ```bash
 rpicam-hello
@@ -141,7 +107,7 @@ If successful, you should see a live camera preview on your display.
 
 ---
 
-## Optional: Python Bindings
+## Optional: Python Bindings (not needed)
 
 To use your Mira camera with Python, install **picamera2** in a virtual environment.
 
@@ -151,24 +117,6 @@ To use your Mira camera with Python, install **picamera2** in a virtual environm
 cd ~
 python -m venv .venv --system-site-packages
 source .venv/bin/activate
-```
-
-### Install picamera2
-
-```bash
-git clone https://github.com/raspberrypi/picamera2
-pip install ./picamera2
-```
-
-### Link Libcamera Python Bindings
-
-The libcamera Python module needs to be accessible to your Python installation.
-
-> **Important**: Adjust the Python version (`3.13` in this example) to match your system's version. Check with `python3 --version`.
-
-```bash
-sudo ln -sf /usr/local/lib/aarch64-linux-gnu/python3.13/site-packages/libcamera \
-            /usr/local/lib/python3.13/dist-packages/libcamera
 ```
 
 ### Test Python Integration
