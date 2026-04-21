@@ -59,7 +59,7 @@ Libcamera is the ISP framework that works alongside the V4L2 driver to process c
 
 ```bash
 # Remove existing camera packages
-sudo apt remove --purge rpicam-apps libcamera-apps libcamera-dev
+sudo apt remove --purge libcamera-dev
 
 # Install build dependencies
 sudo apt install -y libboost-dev libgnutls28-dev openssl libtiff5-dev pybind11-dev
